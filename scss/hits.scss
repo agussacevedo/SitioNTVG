@@ -74,6 +74,7 @@ footer{
 
     div iframe {
         padding-top: 5%;
+        width: 30vw;
     }
     
     div div{
@@ -101,6 +102,10 @@ footer{
         align-items: center;
         flex-direction: column;
 
+        iframe{
+            width: auto;
+        }
+
         div{
             img{
                 max-height: 150px;
@@ -122,6 +127,10 @@ footer{
         display: flex;
         align-items: center;
         flex-direction: column;
+
+        iframe{
+            width: auto;
+        }
 
         div{
             img{

@@ -54,7 +54,8 @@ footer {
   align-items: center;
   flex-direction: column; }
   .mainHits div iframe {
-    padding-top: 5%; }
+    padding-top: 5%;
+    width: 30vw; }
   .mainHits div div {
     display: flex;
     align-items: center;
@@ -73,6 +74,8 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    .mainHits iframe {
+      width: auto; }
     .mainHits div img {
       max-height: 150px; }
     .mainHits div div h2 {
@@ -85,6 +88,8 @@ footer {
     display: flex;
     align-items: center;
     flex-direction: column; }
+    .mainHits iframe {
+      width: auto; }
     .mainHits div img {
       max-height: 300px; }
     .mainHits div div h2 {
