@@ -90,19 +90,62 @@ footer{
     }  
 }
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 720px){
+    .headerHome{
+        height: 5vh;
+        justify-content: space-between;
+        align-self: center;
+        align-items: center;
+
+        img{
+            max-height: 5vh;
+        }
+
+        nav{
+            width: 43%;
+            font-size: 100%;
+            ul{
+                gap: 8%;
+            }
+        }
+    }
+
+    .footerHome{
+        height: auto;
+        img{
+            height: 30px;
+        }
+    }
+
     .mainHome{
         height: 95vh;
     }
+}
 
+@media screen and (max-width: 360px){
+    .mainHome{
+        height: 90vh;
+    }
+    
     .headerHome{
         height: 5vh;
         justify-content: center;
         align-self: center;
         align-items: center;
+
+        img{
+            max-height: 5vh;
+        }
+
+        nav{
+            font-size: 60%;
+            ul{
+                gap: 8%;
+            }
+        }
     }
 
     .footerHome{
-        height: fit-content;
+        height: auto;
     }
 }

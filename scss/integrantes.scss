@@ -109,109 +109,36 @@ footer{
     }
 }
 
-@media screen and (max-width: 360px){
-
-    .mainIntegrantes{
-        display: block;
-        width: 100%;
-        height: max-content;
-
-        section{
-            display: grid;
-            grid-template-columns: repeat(1, 12fr);
-            height: auto;
-
-            div{
-                display: flex;
-                flex-direction: column;
-                
-                img{
-                    max-height: 85%;
-                }
-
-                h2{
-                    font-family:'Open Sans', sans-serif;
-                    color: white;
-                    font-size: 75%;
-                }
-            }
-
-            div:hover img{
-                transform: none;
-            }
-        }
-    
-        section div {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-    }
-
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: start;
+@media screen and (max-width: 720px){
+    .headerIntegrantes{
+        height: 5vh;
+        justify-content: center;
+        align-self: center;
         align-items: center;
 
-        ul li:hover h2 {
-            transform:none;
-        }
-
         img{
-            padding-left: 5%;
-            height: 32px;
+            max-height: 5vh;
         }
-
-        ul{
-            gap: 15%;
-            padding-right: 5%;
-
-            li{
-                font-size: 63%;
-            }
-        }
-    }
-
-    footer{
-        height: auto;
-        width: 100%;
 
         nav{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            padding-right: 3%;
-            
-            a{
-                padding-right: 5%;
-                padding-left: 5%;
+            font-size: 120%;
+            width: 90%;
+            ul{
+                gap: 5%;
             }
-            
-            img{
-                max-height: 2vh;
-            }
-        }
-    
-        p{
-            font-family: 'Open Sans', sans-serif;
-            color: white;
-            font-size: 12px;
-        }
+        }  
     }
-}
 
-@media screen and (max-width: 720px){
     .mainIntegrantes{
         display: block;
         width: 100%;
         height: max-content;
-
+        
         section{
             display: grid;
             grid-template-columns: repeat(2, 6fr);
             height: auto;
-
+            
             div{
                 display: flex;
                 flex-direction: column;
@@ -223,7 +150,7 @@ footer{
                 h2{
                     font-family:'Open Sans', sans-serif;
                     color: white;
-                    font-size: 150%;
+                    font-size: 175%;
                 }
             }
 
@@ -238,4 +165,77 @@ footer{
             justify-content: space-around;
         }
     }
+
+    .footerIntegrantes{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 28px;
+        }
+
+        p{
+            font-size: 115%;
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .headerIntegrantes{
+        height: 5vh;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+
+            img{
+                max-height: 5vh;
+            }
+
+            nav{
+                font-size: 60%;
+                width: 90%;
+                ul{
+                    gap: 5%;
+                }
+            }
+    }
+
+        .mainIntegrantes{
+            display: block;
+            width: 100%;
+            height: max-content;
+    
+            section{
+                display: grid;
+                grid-template-columns: repeat(1, 12fr);
+                height: auto;
+    
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    
+                    img{
+                        max-height: 85%;
+                    }
+    
+                    h2{
+                        font-family:'Open Sans', sans-serif;
+                        color: white;
+                        //font-size: 15px;
+                    }
+                }
+    
+                div:hover img{
+                    transform: none;
+                }
+            }
+        
+            section div {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
 }

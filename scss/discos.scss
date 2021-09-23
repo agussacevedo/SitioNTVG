@@ -95,85 +95,93 @@ footer{
     }
 }
 
-@media screen and (max-width: 360px){
-    .mainDiscos{
-        div{
-            iframe{
-                max-height: 75px;
-            }
-            div{
-                font-size: 50%;
-            }
-        }    
-    }
-}
-
 @media screen and (max-width: 720px){
-    header{
-        width: 100%;
-        display: flex;
-        justify-content: start;
+    .headerDiscos{
+        height: 5vh;
+        justify-content: center;
+        align-self: center;
         align-items: center;
 
-        ul li:hover h2 {
-            transform:none;
+        img{
+            max-height: 5vh;
         }
+
+        nav{
+            font-size: 120%;
+            width: 90%;
+            ul{
+                gap: 5%;
+            }
+        } 
+    }
+    
+    .footerDiscos{
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img{
-            padding-left: 5%;
-            height: 35px;
+            height: 28px;
         }
 
-        nav{
-            width: 55vw;
-        }
-
-        ul{
-            gap: 15%;
-            padding-right: 5%;
-            width: 70%;
-
-            li{
-                font-size: 110%;
-            }
+        p{
+            font-size: 115%;
         }
     }
-
-    footer{
-        height: auto;
-
-        nav{
+    
+    .mainDiscos{
+        section{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            padding-right: 3%;
             
-            a{
-                padding-right: 5%;
-                padding-left: 5%;
+            div{
+                iframe{
+                    width: 300px;
+                }
+                div{
+                    font-size: 65%;
+                }
             }
-            
+        }        
+    }
+}
+
+@media screen and (max-width: 360px){
+    .headerDiscos{
+        height: 5vh;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+
             img{
-                max-height: 2vh;
+                max-height: 5vh;
             }
-        }
-    
-        p{
-            font-family: 'Open Sans', sans-serif;
-            color: white;
-            font-size: 16px;
-        }
+
+            nav{
+                font-size: 60%;
+                width: 90%;
+                ul{
+                    gap:5%;
+                }
+            }
     }
 
     .mainDiscos{
         div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
             iframe{
-                width: 300px;
+                max-height: 27vh;
+                max-width: 70vw;
             }
-            div{
-                font-size: 65%;
+            
+            h3{
+                font-size: 190%;
             }
         }    
     }
 }
-
